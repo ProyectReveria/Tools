@@ -11,6 +11,6 @@ int main(){
     std ::cout << "inserte el segundo has code" << std::endl; 
     std::cin >> mindb; 
 
-    std :: cout << (std::string_view(mindA) == std::string_view(mindb) ? "valido" : "invalido") << std::endl; 
+    std :: cout << (std::string(mindA) == std::string(mindb) ? "valido" : "invalido") << std::endl; 
     return 0; 
 }
