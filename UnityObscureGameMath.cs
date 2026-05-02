@@ -1,5 +1,4 @@
 using UnityEngine;
-
 namespace UnityEngine.Obscure_Framework.Game_Math; 
 
 public static class ObscureMath 
