@@ -1,6 +1,16 @@
 using UnityEngine;
 using System; 
 
+
+///<summary>
+/// Hello! Welcom to one's Again Rosary obscure tools, at this point is my personal way to tell "I MAKE THIS"
+/// In this case is actually useable whit unity, just DO NO change how the namespace behavior, unity do not use Cs readfiles
+/// each formula is the matematical standar of each one. 
+/// in the case of Crit_change is actualy use also has CritDamage formula, becose is tecnecly the same formula.
+/// 
+/// Postada: is on the Disel Engine Logic, is posible is not precises becose of how LUA behaivor whit the data, if this generate one problem
+/// just use the formulas from the Lua RosesBalance Framework.
+/// </summary>
 namespace UnityEngine.Obscure_Framework.Game_Math
 {
     public static class ObscureMath
@@ -22,5 +32,3 @@ namespace UnityEngine.Obscure_Framework.Game_Math
     }
 
 }
-
-
