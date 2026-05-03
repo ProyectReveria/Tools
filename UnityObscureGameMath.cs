@@ -1,5 +1,6 @@
 using UnityEngine;
-using System; 
+using System;
+using System.Numerics;
 
 
 ///<summary>
@@ -13,8 +14,15 @@ using System;
 /// </summary>
 namespace UnityEngine.Obscure_Framework.Game_Math
 {
+    /// <openSource Limits>
+    ///     Give Me credits ty.
+    /// </end of openSource Limits>
+    
     public static class ObscureMath
     {
+    private static int ClampLimitAlfa = 0; 
+    private static int ClampLimitBeta = 1; 
+
     private static readonly System.Random _Sran_ = new System.Random(); 
     public static double incrementalXP(double xp_i,double xp_f) => (xp_f - xp_i / xp_i) * 100; 
     public static double inflation(double Current_CPI, double Previous_CPI) => (Current_CPI - Previous_CPI / Previous_CPI) * 100; 
@@ -29,6 +37,11 @@ namespace UnityEngine.Obscure_Framework.Game_Math
         return _Sran_.NextDouble() * (max-min) + max; 
     }
     public static double Crit_Change_Calculation_Or_CritDamage(double base_crit_chance, double aditive_Crit) => base_crit_chance * (1+aditive_Crit);
-    }
+    public static bool _DogeProb_(double dodgeChance) => _Sran_.NextDouble() *100 < dodgeChance; 
+    public static double _DamageReducted_ (double damage, double reduction) => damage * (1 - Math.Clamp(reduction, ClampLimitAlfa,ClampLimitBeta)); 
 
+    public static double _DoT_Total(double Tick_Damage, double duration, double interval) => (duration/interval) *Tick_Damage; 
+    public static double _Calculate_MultiplicatorOnCrit(double @base, double baseMultiplayer, double Multiplier) => @base * (baseMultiplayer + baseMultiplayer);
+
+    }
 }
