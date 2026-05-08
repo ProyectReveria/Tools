@@ -1,0 +1,144 @@
+//########################################################//
+/* <usefull Comands> 
+
+>>>>Crea un tiempo que gira entre el eje [x,y], trasando circulos:
+
+vec2 translate = vec2(cos(u_time), sin(u_time));
+     
+>>>> division de pixeles
+
+vec2 Cardinal_Partician = gl_FragCoord.xy / u_resolution;  
+
+>>>> centro
+
+float center = 0.0;
+
+</usefull comands> 
+//########################################################//
+
+
+
+*/ 
+//########################
+/* <lenguaje Behaivior> #
+//#######################
+
+Si haces una funcion esta tiene que hacer: func(type(data))
+
+Todo el Codigo es un C ya compilado en librerias .h para la gpu
+
+>>>>gl_fragcolor = vec4(); 
+
+por como funciona el lenguaje fragcolor o gl_fragcolor (opengl fragmento de color) lo que implica es la salida
+en C es lo que implica un return, es la salida del codigo, solo puede haber uno. 
+
+>>>>gl_fragcoord(); 
+
+es el comando permite separar pixeles en pantalla de forma mas directa, literalmente "fragmentos de cordenadas".
+
+este es un vec2 ([x,y]) lo que implica se ocupa usar uno y otro en floads
+
+>>>>Smothstep()
+
+Smothstep recibe valores iguales, pero recibe 3; 
+    Smothstep (float x, float x2 , float x3)
+    Smothstep (vec2 x, vec2 x2 , vec2 x3);
+    Smothstep (vec3 x, vec3 x2 , vec3 x3);
+    Smothstep (vec4 x, vec4 x2 , vec4 x3);
+Agregado a:
+    1) [x,x2] son [borde,limite] y el tercer valor es aquel se evalua. 
+
+    2) si x y x2 son [mayor que x2, menor que x] se invierte, esto implica una degradacion invertida. 
+Tomar en cuenta. 
+
+>>>>length()
+
+length calcula la distancia de un punto de referencia sobre el centro del canvas o bien de la pantalla en la cual esta 
+Ergo a mas grande la pantalla mas lejos el centro y siempre hace esto sobre [0,0] o bien sobre [0,0,0]. 
+
+cabe recalcar se ocupa un "float center = 0.0;" 
+
+>>>>distance()
+
+distance calcula la distancia de un punto en base a otro por ejemplo:
+
+-> [x,y] distancia de [x2,y2] entonces: 
+
+x - x2 / y - y2
+
+oh bien Pitagoras, ambas son validas.
+
+
+Esto es basicamente lo que hace distancia. 
+
+>>>>atan(a,b)
+
+atan calcula angulos, pero los calcula similar a los puntos polares en matematicas. 
+
+un punto polar es una cordenada (similar a las cartesianas) las cuales se miden en magnitudes y radios. 
+
+por tanto su unidad de medida principal no es como el resto, si no que son Radianes. 
+
+>>>u_mouse,u_time, u_resolution
+
+Estas tres lineas siempre llevan un "uniform" al inicio y basicamente implica que son una constante que cambia en la gpu
+
+cada uno tiene su importancia:
+
+u_mouse es la posicion del raton (vec2 | [x,y])
+
+u_time es el tiempo a transcurrido desde que inicio la maquina (float);
+
+u_resolution es la resolucion de la pantalla (vec2 | [x,y]);
+
+</lenguaje behaivior? 
+*/ 
+
+
+
+//########################################################//
+/* <intelisence> 
+
+declaraciones
+xy //ambas cordendas cardenales dentro de dos dimensions
+
+vectors
+vec2 // x,y 
+vec3 // x,y,z
+vec4 // x,y,z,a 
+
+#import OpenGL_Lenguaje_Data; 
+Declaraciones 
+#ifdef 
+precision 
+mediump
+#endif
+
+Declaracion de tipos 
+uniform 
+declaracion de variables
+u_time //Delta time para Shaders (o "en tiempo real")
+u_resolution //La resolucion actual
+u_mouse // El raton o mejor dicho el "mouse" y su posicion
+
+Funciones:
+
+mix() // Mescla Colores
+gl_FragCoord //Cordenadas en pantalla  (recibe coordenadas), permite partir la pantalla (es solo lectura para la GPU)
+gl_FragColor //colores en una pantalla usando pixeles (n(4) o bin n(16) bits)(recibe vector 4 (R,G,B,intensidad))
+smoothstep() //hace un degradado
+step() //corta de golpe una parte de la pantalla para que se renderice distinto
+
+puntos polares
+length() //Devuelve radios, longitudes y distancias, usualmenmte desde el centro
+atan() //Crea angulos basados en puntos polares (Ergo, medidos en Radianes)
+distance() //Define la distancia de un objeto dentro del espacio, por tanto una figura se posiciona usando este, also es la distancia entre dos puntos
+lessThan()
+lessThanEqual()
+greaterThan()
+greaterThenEqual()
+equal() 
+notEqual()
+</Insteliscence> 
+//########################################################//
+*/ 
