@@ -1,5 +1,14 @@
 #include <iostream> 
 #include <string> 
+#define Gustom_Simplify_code
+
+#ifdef Gustom_Simplify_code
+
+template<typename t,std::size_t n> 
+
+constexpr std::size_t length(t (&)[n]){
+    return n;
+}
 
 void print(std::string *text){
     if (text == nullptr){
@@ -9,15 +18,8 @@ void print(std::string *text){
     std::cout << *text; 
 }
 
-void print_Np(std::string Text){
-    std::cout << Text; 
-}
+#endif 
 
-int main(){ 
-    std::string hw = "hello world";
-    std::string *Phw = &hw; 
-    print(Phw); 
-    return 0; 
-}
+
 
 
