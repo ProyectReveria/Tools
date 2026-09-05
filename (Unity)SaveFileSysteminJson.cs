@@ -51,7 +51,7 @@ public class RosaryFileSer : MonoBehaviour
     {
         //Remember put all your Starting files here:
         SaveFileStart.SaveSerial(); 
-        SaveManager.WriteJson( SaveFileStart.saveFilePath, SaveFileStart.TempJson,testnumber,Testname); 
+        SaveManager.WriteJson( SaveFileStart.saveFilePath, SaveFileStart.TempsaveFilePath,testnumber,Testname); 
         Items_Serial.SaveItem_Json(SaveFileStart.ItemList,SaveFileStart.TempItems); 
         SaveManager.LoadData (SaveFileStart.saveFilePath);
 
@@ -96,7 +96,9 @@ public class SaveFileStart
 
         public static string ItemList = Path.Combine(DirectoryPath, "ItemList");
         public static string saveFilePath = Path.Combine(DirectoryPath, SaveJsonName);
+        //TempFile path
         public static string TempsaveFilePath = Path.Combine (DirectoryPath, TempJson); 
+        public static string TempSaveItemsPath = Path.Combine (DirectoryPath, TempItems);
 
     public static void SaveSerial()
     {
