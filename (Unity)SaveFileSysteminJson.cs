@@ -52,7 +52,7 @@ public class RosaryFileSer : MonoBehaviour
         //Remember put all your Starting files here:
         SaveFileStart.SaveSerial(); 
         SaveManager.WriteJson( SaveFileStart.saveFilePath, SaveFileStart.TempsaveFilePath,testnumber,Testname); 
-        Items_Serial.SaveItem_Json(SaveFileStart.ItemList,SaveFileStart.TempItems); 
+        Items_Serial.SaveItem_Json(SaveFileStart.ItemList,SaveFileStart.TempSaveItemsPath); 
         SaveManager.LoadData (SaveFileStart.saveFilePath);
 
         //Objects are not here for tecnical reazons alreary serialize
