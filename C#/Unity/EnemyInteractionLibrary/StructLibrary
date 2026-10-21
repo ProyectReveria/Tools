@@ -1,0 +1,57 @@
+using UnityEngine;
+
+namespace RMC.StructLibrary
+{
+    public class StructureLibrary 
+    {
+        #region  Enums
+
+        public enum _EnemyStatus
+        {
+            alive, 
+            death, 
+            stun,
+        }
+
+
+        public enum Enemy_Type
+        {
+            Range_Enemy, 
+            Melee_Enemy, 
+            Boss_Enemy, 
+            Neutral_Enemy,
+            Test_Enemy,
+        }
+        #endregion
+        #region  Enemy 
+        [System.Serializable]
+        public struct Enemy_UniversalStats
+        {
+            /// !<Sobre la vida de los enemigos>
+            ///  La vida de los enemigos esta puesta como un valor 'Float' esto se debe a que la vida en general tanto de jugador como de enemigos se trabaja en valores de:
+            ///  1.0 y 0.5 
+            ///  esto significa ningun arma en el juego ara daño que no sea 1 o 0.5 estrictamente; 
+            /// !</End>
+            [Range(1f,700f)] public float EnemyHP; 
+            [Range(0f,5f)] public float Enemy_Resistance; 
+            //TODO: Se aplica le mismo principio de la vida al daño
+            [Range(1f,3f)] public float Enemy_Damage; 
+            public Vector2 Enemy_Spawn; //? Si se ocupa 
+
+            [Range(1f,10f)]public float Enemy_Speed; 
+            public Enemy_Type Enemy_Type;
+            [Range(0.25f,50f)] public float Enemy_Aceleration;
+            [Range(0.25f,50f)] public float Enemy_DAceleration;
+
+            [Range (0.10f, 0.50f)] public float Enemy_LedgeCheckoofset;
+            public _EnemyStatus Enemy_Status; 
+        }
+        #endregion
+
+        #region PlayerWeapon 
+
+
+        #endregion
+    }
+
+}
