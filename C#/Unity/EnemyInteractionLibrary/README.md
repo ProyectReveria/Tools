@@ -5,8 +5,6 @@ This library contains 2D Unity code only.
 ## How to use
 
 1. Install both files (everything except the README).
-   -> Enemy_Damage_Interface
-   ->Enemy_Movement_Abstract
 3. Import them into your Unity project.
 4. Create a new C# script.
 5. Make your class inherit from `Enemy_Movement_BaseBahivior`:
