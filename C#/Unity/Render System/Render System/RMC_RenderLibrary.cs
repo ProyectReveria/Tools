@@ -10,9 +10,6 @@ public abstract class RMC_RenderLibrary : MonoBehaviour
     public List<GameObject> allGameobjects_OnUpdateRender = new(); //Cosas van aqui: Enemigos, efectos visuales, cosas que den un peso impositivo al sistema perpetuo.
     [Header ("Referencias")]
     [SerializeField] protected CircleCollider2D RenderCollider; 
-    [SerializeField] protected LayerMask Ground_layer; 
-    [SerializeField] protected LayerMask DamageEnviorment_layer; 
-    [SerializeField] protected LayerMask Player_Layer;
 
     //Referencial Data from the script
     #region  OnUpdate_FromUnity
