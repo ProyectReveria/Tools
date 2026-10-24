@@ -1,4 +1,4 @@
-# Render System
+# Render System 2D
 
 This Render System was designed for my Metroidvania project, **Reveria**.
 
