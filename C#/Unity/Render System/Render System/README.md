@@ -8,9 +8,6 @@ It deactivates entire Unity GameObjects when they are outside the render collisi
 
 ```cssharp
     [SerializeField] protected CircleCollider2D RenderCollider; 
-    [SerializeField] protected LayerMask Ground_layer; 
-    [SerializeField] protected LayerMask DamageEnviorment_layer; 
-    [SerializeField] protected LayerMask Player_Layer;
 ```
 ## How to Use
 
@@ -25,11 +22,6 @@ public List<GameObject> allGameobjects_OnUpdateRender = new();
 ```
 
 This list can contain enemies, visual effects, environmental objects, and other GameObjects that do not need to remain active outside the render area.
-
-6. Assign the required layer references in the Inspector:
-   - `Ground_Layer`
-   - `DamageEnviorment_Layer`
-   - `Player_Layer`
 
 ## Initialization
 
