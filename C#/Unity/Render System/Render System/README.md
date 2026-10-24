@@ -38,10 +38,6 @@ using UnityEngine;
 
 public interface RMC_Render_Contracts
 {
-    public void OnEnter_RenderRange()
-    {
-    }
-
     public void OnRender_Awake()
     {
     }
