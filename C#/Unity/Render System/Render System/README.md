@@ -4,6 +4,14 @@ This Render System was designed for my Metroidvania project, **Reveria**.
 
 It deactivates entire Unity GameObjects when they are outside the render collision area. This disables their components and scripts until the system activates them again.
 
+# Dependencies
+
+```cssharp
+    [SerializeField] protected CircleCollider2D RenderCollider; 
+    [SerializeField] protected LayerMask Ground_layer; 
+    [SerializeField] protected LayerMask DamageEnviorment_layer; 
+    [SerializeField] protected LayerMask Player_Layer;
+```
 ## How to Use
 
 1. Download the files from this repository.
