@@ -4,7 +4,7 @@ using System;
 using RMC.Player_Interaction.ThePlayerGeneralManager;
 using System.Collections.Generic;
 [DefaultExecutionOrder (1000)]
-public abstract class RMC_RenderLibrary : MonoBehaviour , RMC_Render_Contracts
+public abstract class RMC_RenderLibrary : MonoBehaviour 
 {
     [Header ("AllGameobjects")]
     public List<GameObject> allGameobjects_OnUpdateRender = new(); //Cosas van aqui: Enemigos, efectos visuales, cosas que den un peso impositivo al sistema perpetuo.
