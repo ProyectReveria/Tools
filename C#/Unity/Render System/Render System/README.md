@@ -46,10 +46,6 @@ public interface RMC_Render_Contracts
     {
     }
 
-    public void OnPermanent_UnrenderRange()
-    {
-    }
-
     public void OnRender_Awake()
     {
     }
