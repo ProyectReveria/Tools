@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes" ?>
+<OzoneEQ PresetVer="5" PluginVer="110300" PluginBuild="3540" LastModified="1793574333">
+    <EQ Enabled="1">
+        <Param ElementID="Equalizer" ParamID="Band 2 Shape" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Gain" Value="-0.08205155" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Frequency" Value="3666.24487305" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Q" Value="12.00000000" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Gain" Value="-9.92821217" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Shape" Value="2" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Frequency" Value="143.52575684" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Gain" Value="-9.96923733" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Frequency" Value="149.97018433" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Frequency" Value="144.79475403" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Gain" Value="-0.08205155" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Visible" Value="1" />
+        <ExtraBytes ElementID="Equalizer" Data="" />
+    </EQ>
+    <Global Enabled="1">
+        <ExtraBytes ElementID="ElementChain" Data="AAkAAABFcXVhbGl6ZXI=" />
+        <ExtraBytes ElementID="Global" Data="" />
+    </Global>
+    <Meters Enabled="1" />
+</OzoneEQ>

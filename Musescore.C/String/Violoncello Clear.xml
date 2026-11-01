@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes" ?>
+<OzoneEQ PresetVer="5" PluginVer="110300" PluginBuild="3540" LastModified="1793574333">
+    <EQ Enabled="1">
+        <Param ElementID="Equalizer" ParamID="Band 1 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Frequency" Value="6982.31054688" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Gain" Value="-9.43590260" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Shape" Value="2" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Visible" Value="1" />
+        <ExtraBytes ElementID="Equalizer" Data="" />
+    </EQ>
+    <Global Enabled="1">
+        <ExtraBytes ElementID="ElementChain" Data="AAkAAABFcXVhbGl6ZXI=" />
+        <ExtraBytes ElementID="Global" Data="" />
+    </Global>
+    <Meters Enabled="1" />
+</OzoneEQ>

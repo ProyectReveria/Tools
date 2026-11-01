@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes" ?>
+<OzoneEQ PresetVer="5" PluginVer="110300" PluginBuild="3540" LastModified="1793574331">
+    <EQ Enabled="1">
+        <Param ElementID="Equalizer" ParamID="Band 2 Shape" Value="2" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Gain" Value="-9.32308102" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Frequency" Value="2298.16992188" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Q" Value="12.00000000" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Gain" Value="-9.95897484" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Shape" Value="0" />
+        <Param ElementID="Equalizer" ParamID="Band 1 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Frequency" Value="4486.86328125" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Gain" Value="-9.88718510" />
+        <Param ElementID="Equalizer" ParamID="Band 2 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Frequency" Value="20.00000000" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 3 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Frequency" Value="290.63000488" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Gain" Value="5.97949123" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 4 Visible" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 5 Enable" Value="1" />
+        <Param ElementID="Equalizer" ParamID="Band 5 Frequency" Value="477.78253174" />
+        <Param ElementID="Equalizer" ParamID="Band 5 Gain" Value="-8.98462105" />
+        <Param ElementID="Equalizer" ParamID="Band 5 Q" Value="0.69999999" />
+        <Param ElementID="Equalizer" ParamID="Band 5 Visible" Value="1" />
+        <ExtraBytes ElementID="Equalizer" Data="" />
+    </EQ>
+    <Global Enabled="1">
+        <ExtraBytes ElementID="ElementChain" Data="AAkAAABFcXVhbGl6ZXI=" />
+        <ExtraBytes ElementID="Global" Data="" />
+    </Global>
+    <Meters Enabled="1" />
+</OzoneEQ>
